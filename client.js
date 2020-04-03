@@ -26,7 +26,7 @@ socket.on('user-connected', function(data)
 
 socket.on('user-disconnected', function(data)
 {
-    appendMessage(`${name} disconnected`, data.color);
+    appendMessage(`${data.name} disconnected`, data.color);
 })
 
 messageForm.addEventListener('submit', function(e)

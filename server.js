@@ -39,7 +39,6 @@ io.on('connection', function(socket)
     socket.on('disconnect', function()
     {
         socket.broadcast.emit('user-disconnected', {name: users[socket.id], color: color[socket.id]});
-        numberUsersColor = numberUsersColor - 1;
         delete users[socket.id];
     })
 })
