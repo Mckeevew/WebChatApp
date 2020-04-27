@@ -9,3 +9,5 @@ To Run the demo
   - npm run start
   
   - open the index.html in your web browser
+
+  ![Demo image](images/demo.png)
